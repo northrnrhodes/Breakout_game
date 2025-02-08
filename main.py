@@ -40,7 +40,7 @@ while game_on:
         ball.bounce()
 
     for brick in bricks.all_bricks:
-        if brick.distance(ball) < 60:
+        if brick.distance(ball) < 50:
             brick.hideturtle()
             scoreboard.score += 1
             scoreboard.update_score()
